@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>Liste des Pizzas</h1>
+    <div class="list-pizza">
+        <a *ngFor="let pizza of list_pizza; let indexofElemnt=index" (click)="recupPizzaSelected(pizza)">{{pizza.getName()}} {{indexofElemnt}} </a>
+    </div>
+    <button> Ajouter</button>
+</div>
