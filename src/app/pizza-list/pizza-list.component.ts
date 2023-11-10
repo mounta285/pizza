@@ -1,5 +1,9 @@
 import { Component, EventEmitter, Input,OnInit, Output } from '@angular/core';
-import { Pizza } from '../shared/Pizza';
+import { Pizza } from '../shared/model/Pizza';
+import { PizzaService } from '../shared/PizzaService';
+
+
+
 
 @Component({
   selector: 'app-pizza-list',
@@ -15,9 +19,12 @@ export class PizzaListComponent implements OnInit {
  
   }
   recupPizzaSelected(p:Pizza ) {
-    this.pizzaSelected.emit(p);
-}
+      this.pizzaSelected.emit(p);
+    }
+    constructor(private pizzaService: PizzaService) {
+      this.pizzaService.setPizzas(this.list_pizza);
 
+    }
   
   
 }

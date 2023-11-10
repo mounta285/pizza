@@ -1,16 +1,11 @@
 .list-pizza{
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    border: 1  solid black;
 }
 
 a{
     padding: 10px 0;
+    background-color: aquamarine;
 }
 
-button {
-    padding: 10px;
-    border: solid 1px var(--primary-color);
-    /*background: var(--primary-color);
-    color: white;*/
-    border-radius: 8px;
-  }

@@ -1,2 +1,5 @@
-<app-pizza-list [list_pizza]="list" (pizzaSelected)="isSelectedPizza($event)"></app-pizza-list>
-<app-pizza-details [pizza]="selectedPizza"></app-pizza-details>
+<app-header></app-header>
+<div class="container_pizza">
+    <app-pizza-list [list_pizza]="list" (pizzaSelected)="isSelectedPizza($event)"></app-pizza-list>
+    <app-pizza-details [pizza]="selectedPizza"></app-pizza-details>
+</div>

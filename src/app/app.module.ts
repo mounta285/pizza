@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { PizzaListComponent } from './pizza-list/pizza-list.component';
 import { PizzaDetailsComponent } from './pizza-details/pizza-details.component';
 import { ContainerComponent } from './container/container.component';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContainerComponent } from './container/container.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
